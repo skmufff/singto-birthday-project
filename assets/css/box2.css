@@ -171,6 +171,10 @@ footer{
     .credits-container{
         font-size: 16px;
     }
+
+    footer{
+        font-size: 14px;
+    }
 }
 
 @media(max-width: 1200px){

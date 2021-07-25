@@ -138,6 +138,10 @@ footer{
         overflow: hidden;
         flex-wrap: wrap;
     }
+
+    footer{
+        font-size: 14px;
+    }
 }
 
 @media(max-width: 1000px){
