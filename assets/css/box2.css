@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+
+body{
+    /* background-color: #000; */
+    background-image: url('../images/box2/starry.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+.back button{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #1b1b1b;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    border-radius: 4px;
+    box-shadow: 0 3px #0a0a0a;
+    opacity: 0.8;
+}
+
+.back button:hover, .back button:active{
+    opacity: 1;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flip-card {
+    background-color: transparent;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 350px;
+    height: 440px;
+    border: 0.5px solid rgb(61, 61, 61);
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    box-shadow: 0.5px 0.5px #000, 1.5px 2px #fff;
+}
+  
+.flip-card-inner {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 22px;
+    text-shadow: 0.8px 0.8px #ff0008, 0.8px 0.8px #000;
+
+}
+
+.txt-container{
+    width: 85%;
+}
+
+.txt-wish{
+    text-align: justify;
+}
+
+.name{
+    text-align: center;
+    text-shadow: 0.5px 0.5px #1a8cff;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-image: url('../images/box2/back.jpg');
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.outer-credits{
+    display: flex;
+    justify-content: center;
+}
+
+.credits{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding-left: 10px;
+    color: white;
+    background-color: #0c0c14;
+    box-shadow: 1.5px 2px #007399;
+}
+
+.credits-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Markazi Text', serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+@media(max-width: 670px){
+    body{
+        background-image: url('../images/box2/starry.jpg');
+        background-repeat: repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .credits{
+        width: 70%;
+        padding-left: 15px;
+    }
+
+    .credits-container{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1200px){
+    body{
+        background-image: url('../images/box2/starry.jpg');
+        background-repeat: repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .credits{
+        width: 55%;
+        padding-left: 15px;
+    }
+
+    .credits-container{
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 1200px){
+    body{
+        background-image: url('../images/box2/starry.jpg');
+        background-repeat: repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .credits{
+        width: 50%;
+        padding-left: 15px;
+    }
+
+    .credits-container{
+        font-size: 22px;
+    }
+}
