@@ -154,6 +154,10 @@ footer{
     letter-spacing: 2px;
 }
 
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 @media(max-width: 670px){
     body{
@@ -161,6 +165,20 @@ footer{
         background-repeat: repeat;
         background-position: center;
         background-size: contain;
+    }
+
+    .flip-card{
+        width: 250px;
+        height: 340px;
+    }
+
+    .flip-card-front{
+        width: 250px;
+        height: 340px;
+    }
+
+    .flip-card-back{
+        font-size: 16px;
     }
 
     .credits{
