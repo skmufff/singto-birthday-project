@@ -36,6 +36,29 @@ a:visited{
     opacity: 1;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(88, 0, 39);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    font-weight: 900;
+}
+  
+#myBtn:hover {
+    background-color: rgb(174, 0, 58);
+}
+
 .top1{
     display: flex;
     justify-content: center;
@@ -126,6 +149,10 @@ img{
 }
 
 @media(max-width: 500px){
+    #myBtn{
+        font-size: 16px;
+    }
+
     .msg-head p{
         font-size: 12px;
     }
@@ -150,6 +177,10 @@ img{
 }
 
 @media(max-width: 670px){
+    #myBtn{
+        font-size: 16px;
+    }
+
     .msg-head p{
         font-size: 24px;
     }
@@ -174,6 +205,10 @@ img{
 }
 
 @media(max-width: 1000px){
+    #myBtn{
+        font-size: 18px;
+    }
+
     .msg-head p{
         font-size: 30px;
     }
