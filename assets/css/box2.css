@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
 
 body{
     /* background-color: #000; */
@@ -60,6 +61,24 @@ a:visited{
   
 #myBtn:hover {
     background-color: rgb(0, 47, 189);
+}
+
+.top{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.top h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Charmonman', cursive;
+    font-size: 54px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0.3px 0.3px #fff700;
 }
 
 .cards{
@@ -194,14 +213,19 @@ img{
         font-size: 16px;
     }
 
-    .flip-card{
-        width: 320px;
-        height: 410px;
+    .top h1{
+        font-size: 30px;
+        text-align: center;
     }
 
-    .flip-card-front{
+    .flip-card{
         width: 320px;
-        height: 410px;
+        height: 400px;
+    }
+
+    .flip-card-front img{
+        width: 320px;
+        height: 400px;
     }
 
     .flip-card-back{
@@ -234,13 +258,18 @@ img{
         font-size: 18px;
     }
 
+    .top h1{
+        font-size: 42px;
+        text-align: center;
+    }
+
     .credits{
-        width: 55%;
+        width: 80%;
         padding-left: 15px;
     }
 
     .credits-container{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
