@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
 
 body{
-    background-color: #fdecec;
+    /* background-color: #fdecec; */
     color: rgb(255, 255, 255);
+    background-image: url('../images/box3/pink.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
     position: relative;
 }
 
@@ -128,6 +133,30 @@ img{
     box-shadow: none;
 }
 
+.outer-credits{
+    display: flex;
+    justify-content: center;
+}
+
+.credits{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding-left: 10px;
+    color: white;
+    background-color: #0c0c14;
+    box-shadow: 1.5px 2px #007399;
+}
+
+.credits-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Markazi Text', serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
 footer{
     position: absolute;
     right: 0;
@@ -170,6 +199,15 @@ img{
         overflow: hidden;
         flex-wrap: wrap;
     }
+    
+    .credits{
+        width: 70%;
+        padding-left: 15px;
+    }
+
+    .credits-container{
+        font-size: 14px;
+    }
 
     footer{
         font-size: 12px;
@@ -199,6 +237,15 @@ img{
         flex-wrap: wrap;
     }
 
+    .credits{
+        width: 70%;
+        padding-left: 15px;
+    }
+
+    .credits-container{
+        font-size: 14px;
+    }
+
     footer{
         font-size: 14px;
     }
@@ -225,6 +272,15 @@ img{
         align-items: center;
         overflow: hidden;
         flex-wrap: wrap;
+    }
+
+    .credits{
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .credits-container{
+        font-size: 18px;
     }
 }
 
