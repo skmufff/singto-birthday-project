@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+body{
+    background-image: url('../images/box2/starry.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+.back button{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #1b1b1b;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    border-radius: 4px;
+    box-shadow: 0 3px #0a0a0a;
+    opacity: 0.8;
+}
+
+.back button:hover, .back button:active{
+    opacity: 1;
+}
