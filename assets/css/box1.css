@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
 body{
     background-image: url('../images/box2/starry.jpg');
     background-repeat: repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     color: #fff;
 }
@@ -35,4 +38,477 @@ a:visited{
 
 .back button:hover, .back button:active{
     opacity: 1;
+}
+
+.slides{
+    display: none;
+    width: 100%;
+}
+
+.slides img{
+    /* vertical-align: middle; */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.caption{
+    /* position: absolute; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding: 8px 12px;
+    bottom: 8px;
+    color: #f2f2f2;
+    font-size: 36px;
+    font-family: 'Charm', cursive;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: 3px 3px 8px #00022d;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{
+        opacity: .5;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade{
+    from{
+        opacity: .5;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.dots-container{
+    text-align: center;
+}
+
+.head{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 36px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #00b7fa;
+
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media{
+    width: 40%;
+    padding-top: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.238);
+}
+
+.social-media p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.238);
+}
+
+.gift{
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.238);
+    border-radius: 50px;
+    border-style: solid;
+    animation: giftText 5s infinite alternate;
+}
+
+.gift:hover{
+    background-color: rgba(255, 137, 137, 0.428);
+}
+
+@keyframes giftText {
+    0% {border-color: rgb(255, 0, 0);}
+    20% {border-color: rgb(255, 123, 0);}
+    40% {border-color: rgb(255, 238, 0);}
+    60% {border-color: rgb(64, 255, 0);}
+    80% {border-color: rgb(0, 21, 255);}
+    100% {border-color: rgb(166, 0, 255);}
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.my-profile{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.txtlyn{
+    display: flex;
+    justify-content: center;
+}
+
+#lyn{
+    display: flex;
+    width: 80%;
+    font-size: 24px;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1, 11, 42, 0.435);
+    box-shadow: 0 3px 5px 1px yellow;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Markazi Text', serif;
+}
+
+.profile-card img{
+    border-radius: 20px;
+}
+
+.twitter-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-tw{
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.gift-container{
+    width: 10%;
+    /* margin-left: 40px; */
+}
+
+.gift-container p{
+    width: fit-content;
+    opacity: 0.9;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.238);
+}
+
+.gift-container p:hover{
+    opacity: 1;
+    text-shadow: 3px 3px 8px #00022d;
+}
+
+.hide-container{
+    width: 50%;
+    margin-left: 50px;
+}
+
+#hide {
+    display: none;
+
+}
+
+/* #hide p{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+} */
+
+.outer-credits{
+    display: flex;
+    justify-content: center;
+}
+
+.credits{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding-left: 10px;
+    color: white;
+    background-color: #0c0c14;
+    box-shadow: 1.5px 2px #007399;
+}
+
+.credits-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Markazi Text', serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@media(max-width: 620px)
+{
+    .caption{
+        font-size: 24px;
+    }
+
+    .dot{
+        height: 10px;
+        width: 10px;
+    }
+
+    .head{
+        font-size: 20px;
+    }
+
+    .image-container img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-media{
+        width: 95%;
+        padding-top: 12px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.238);
+    }
+    
+    .social-media p{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 12px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.238);
+    }
+
+    .profile-card{
+        max-width: 260px;
+    }
+
+    #lyn{
+        font-size: 20px;
+    }
+
+    #card-tw{
+        font-size: 18px;
+    }
+
+    .gift-container p{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .credits{
+        width: 70%;
+        padding-left: 15px;
+    }
+
+    .credits-container{
+        font-size: 14px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 1000px)
+{
+    .caption{
+        font-size: 30px;
+    }
+
+    .dot{
+        height: 15px;
+        width: 15px;
+    }
+
+    .head{
+        font-size: 30px;
+    }
+
+    .image-container img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-media{
+        width: 80%;
+        padding-top: 12px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.238);
+    }
+    
+    .social-media p{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.238);
+    }
+
+    .profile-card{
+        max-width: 300px;
+    }
+
+    #lyn{
+        font-size: 24px;
+    }
+
+    #card-tw{
+        font-size: 20px;
+    }
+
+    .gift-container p{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .credits{
+        width: 60%;
+        padding-left: 15px;
+    }
+
+    .credits-container{
+        font-size: 18px;
+    }
+
+    footer{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1200px)
+{
+    .caption{
+        font-size: 32px;
+    }
+
+    .dot{
+        height: 15px;
+        width: 15px;
+    }
+
+    .head{
+        font-size: 32px;
+    }
+
+    .image-container img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-media{
+        width: 60%;
+        padding-top: 12px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.238);
+    }
+    
+    .social-media p{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.238);
+    }
+
+    .profile-card{
+        max-width: 300px;
+    }
+
+    #lyn{
+        font-size: 24px;
+    }
+
+    #card-tw{
+        font-size: 20px;
+    }
+
+    .gift-container p{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .credits{
+        width: 50%;
+        padding-left: 15px;
+    }
+
+    .credits-container{
+        font-size: 18px;
+    }
+
+    footer{
+        font-size: 16px;
+    }
 }
